@@ -18,6 +18,12 @@ public class Method {
         System.out.println("mul1 결과: " + mul1(10, 20));
         System.out.println("mul2 (numbers) 결과: " + mul2(numbers));
         System.out.println("mul2 (numbers2) 결과: " +mul2(numbers2));
+
+        System.out.println(sum3(1, 2, 3));
+        System.out.println(sum3(1, 2, 3, 4, 5, 6));
+        System.out.println(sum3(1, 2, 3, 4, 5, 6, 7, 8, 9, 10));
+
+        System.out.println(factorial(5)); // 5! = 120
     }
 
     // 반환 값이 없는 메서드
@@ -47,6 +53,26 @@ public class Method {
         }
 
         return sum;
+    }
+
+    // 가변인자(Varargs) 사용: 메소드 호출 시 넘겨줄 인자의 개수를 동적으로 지정할 수 있게 해주는 기능
+    // 문법) 타입... 변수명
+    // - 메소드 내부에서 가변 인자는 배열로 처리
+    // - 가변 인자는 메서드의 마지막 파라미터로만 사용 가능
+    // - 하나의 메소드에는 하나의 가변인자만 사용 가능
+    public static int sum3(int... numbers) {
+        int total = 0;
+        for (int num : numbers) {
+            total += num;
+        }
+
+        return total;
+    }
+
+    // 재귀 메서드: 자기 자신을 호출하는 메서드
+    public static int factorial(int n) { // n = 5 -> n = 4 -> n = 3 -> n = 2 -> n = 1
+        if (n <= 1) return 1; // 5 * 4 * 3 * 2 * 1 => 120
+        return n * factorial(n - 1); // 5 * fac(4) -> 5 * 4 * fac(3) ->  5 * 4 * 3 * fac(2)  -> 5 * 4 * 3 * 2 * fac(1)
     }
 
 
