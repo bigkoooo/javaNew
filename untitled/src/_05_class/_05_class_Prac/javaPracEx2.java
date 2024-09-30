@@ -1,4 +1,4 @@
-package _05_class;
+package _05_class._05_class_Prac;
 
 public class javaPracEx2 {
     public static void main(String[] args) {

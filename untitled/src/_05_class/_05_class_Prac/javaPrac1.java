@@ -1,4 +1,4 @@
-package _05_class;
+package _05_class._05_class_Prac;
 
 public class javaPrac1 {
     // 필드: 접근 제어자를 private로 변경

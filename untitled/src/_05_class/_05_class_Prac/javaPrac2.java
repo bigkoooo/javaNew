@@ -1,4 +1,4 @@
-package _05_class;
+package _05_class._05_class_Prac;
 
 public class javaPrac2 { // Student 클래스
     // 인스턴스 필드

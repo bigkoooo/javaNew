@@ -1,4 +1,4 @@
-package _05_class;
+package _05_class._05_class_Prac;
 
 import java.util.ArrayList;
 import java.util.Scanner;
