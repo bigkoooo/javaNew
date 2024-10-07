@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>폼 전송</title>
+</head>
+<body>
+<h2>폼 전송 - 실습</h2>
+<form action="/submitForm" method="POST">
+    이름: <input type="text" name="name" required><br>
+
+    성별:
+    <input type="radio" name="gender" value="male" required> 남자
+    <input type="radio" name="gender" value="female"> 여자<br>
+
+    생년월일:
+    <select name="birthYear">
+        <option value="1950">1950</option>
+        <!-- 더 많은 옵션 추가 -->
+    </select>
+    년
+    <select name="birthMonth">
+        <option value="1">1</option>
+        <!-- 더 많은 옵션 추가 -->
+    </select>
+    월
+    <select name="birthDay">
+        <option value="1">1</option>
+        <!-- 더 많은 옵션 추가 -->
+    </select>
+    일<br>
+
+    관심사:
+    <input type="checkbox" name="interests" value="여행"> 여행
+    <input type="checkbox" name="interests" value="패션"> 패션
+    <input type="checkbox" name="interests" value="음식"> 음식<br>
+
+    <button type="submit">회원가입</button>
+</form>
+</body>
+</html>

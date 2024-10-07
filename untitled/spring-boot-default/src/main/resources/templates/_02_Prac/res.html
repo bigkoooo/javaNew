@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Result</title>
+</head>
+<body>
+<p>내 이름은 <span th:text="${name}">홍길동</span></p>
+
+<!-- age 값이 있을 때만 출력 -->
+<div th:if="${age != null}">
+  <p>내 나이는 <span th:text="${age}"></span></p>
+</div>
+</body>
+</html>
